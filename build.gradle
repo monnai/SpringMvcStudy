@@ -16,6 +16,12 @@ repositories {
 }
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    compile('org.thymeleaf:thymeleaf:3.0.9.RELEASE')
+    compile('org.thymeleaf:thymeleaf-spring4:3.0.9.RELEASE')
+    compile('nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:2.2.2')
+    compile 'org.webjars:materializecss:0.96.0'
+    compile 'org.webjars:jquery:2.1.4'
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
